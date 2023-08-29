@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ARRAY ITERATION METHODS</title>
+</head>
+<body>
+	<h2>Array iteration methods | filter()</h2>
+	<p>this method creates a new array and if the condition is satisfied the return it after the iteration loop.</p>
+</body>
+	<script type="text/javascript">
+		let nums =[2,9,5,4,7,6];
+		let even_nums =nums.filter(function(fil) 
+		{
+			return fil%2==0
+		})
+		document.write(even_nums,"<br>")
+
+		let odd_nums=nums.filter(function(fil,i,arr)
+		{
+			return fil%2!=0
+		})
+		document.write(odd_nums)
+		
+		
+
+
+
+</script>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String method 1</title>
+</head>
+<body>
+	<h4>String Methods:</h4>	
+		<script type="text/javascript">
+		function str(str) 
+		{
+			document.write("<b>"+str+"</b><br>")
+		}
+		let name='Munnisha Shaik';
+		//substring method
+		document.write(" Given String is Munnisha Shaik.","<br>")
+		str('Substring of string ='+name.substring(0,8));
+		str('Substring of string='+name.substring(-1)); //returns complete string
+		document.write("<hr>")
+		//substr method
+
+		let name1='Munnisha';
+		document.write(" Given String is Munnisha","<br>")
+		str("Substr method ="+name1.substr(0,5));
+		document.write("<hr>")
+		//replace method
+		let name2='SK Munnisha';
+		document.write(" Given String is SK Munnisha","<br>")
+		str('Replace of string ='+name2.replace('SK','Shaik'))
+		document.write("<hr>")
+		//uppercase
+		let name3='adam khasim';
+		document.write(" Given String is adam khasim.","<br>")
+		str("To Upper Case="+name3.toLocaleUpperCase())
+		document.write("<hr>")
+		//lowercase
+		let name4='PARVEEN';
+		document.write("<b>ToLocaleLowerCase:</b>"," Given String is PARVEEN.","<br>")
+		str("To Lower Case="+name4.toLocaleLowerCase())
+		document.write("<hr>")
+		//indexof method
+		let name5='Alisha';
+		document.write(" Given String is Alisha.","<br>")
+		str("Indexof="+name5.indexOf('s'))
+		document.write("<hr>")
+		//lastindexof method
+		let name6='Meera';
+		document.write(" Given String is Meera.","<br>")
+		str("LastIndexof="+name6.lastIndexOf('e'))
+		document.write("<hr>")
+
+		//include method
+		//it allows the +ve indexs
+		let name7='Lal Alisha';
+		document.write(" Given String is Lal Alisha.","<br>")
+		str('Includes of string='+name7.includes('Alisha'));
+		str('Includes of string='+name7.includes('alisha'));
+		document.write("<hr>")
+		//slice method
+		//it allows postive  and negative index values
+		let name8='Sameer Shaik'
+		document.write(" Given String is Sameer Shaik.","<br>")
+		str('Slice of string ='+name8.slice(0,5));
+		str('Slice of string='+name8.slice(-5));
+		str('Slice of string='+name8.slice(-6,-2));
+		document.write("<hr>")
+		//charcodeAt method
+		let name9='Beebi';
+		document.write(" Given Substring is Munnisha Shaik.","<br>")
+		str("CharCodeAt="+name9.charCodeAt('i'))
+		document.write("<hr>")
+		//trim method
+		let name10='    Muntaj Begum   ';
+		document.write(" Given String is Muntaj Begum .","<br>")
+		str("Trim method="+name10.trim()); //removes left and right spaces
+		document.write("<hr>")
+		//split method
+		let name11='Meera&Azam,Akbar';
+		document.write(" Given String is Meera&Azam,Akbar.","<br>")
+		str("Split of="+name11.split("&"));
+		document.write("<hr>")
+		//valueof method --does not changes the Original string value
+		let name12 = "Shareef";
+		let result = name12.valueOf();
+		document.write(" Given String is Shareef .","<br>")
+		str("value of ="+result);
+		document.write("<hr>")
+		//concatinate method
+		let name13='Haseena';
+		let name14='Shaik';
+		document.write(" Given String1 is Haseena.","<br>")
+		document.write(" Given String1 is Shaik.","<br>")
+		str("concatinate of =".concat(name13,name14));
+		document.write("<hr>")
+		//match method
+		let name15='Kareem';
+		document.write(" Given String is Kareem.","<br>")
+		str("Match of ="+name15.match("rem"));
+		str("Match of ="+name15.match("reem"));
+		document.write("<hr>")
+
+		//string method ==returns same string
+		let name16 = 'Hasee';
+		document.write(" Given String is Hasee.","<br>")
+		str("To String ="+name16.toString("h"))
+		document.write("<hr>")
+
+	</script>
+</body>
+</html>

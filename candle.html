@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Candle Task</title>
+</head>
+<body>
+	<center>
+	<img src="candleoff1.jpg" id="candle" alt="candle img" name="candles">
+	</center>
+	<script type="text/javascript">
+		let candleimg=document.getElementById('candle');
+		candleimg.onmouseover=sample
+		candleimg.onmouseout=change
+		function sample()
+		 {
+			document.candles.src="candleon.jpg";
+			document.candles.style.height="200px"
+			document.candles.style.width="200px"
+		}
+		function change()
+		 {
+			document.candles.src="candleoff1.jpg";
+			document.candles.style.height="200px"
+			document.candles.style.width="200px"
+		}
+
+	</script>
+
+</body>
+</html>

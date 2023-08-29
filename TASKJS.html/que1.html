@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task1</title>
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="n1"></p>
+	<script type="text/javascript">
+		let var1 = 200;
+		document.write("<b>Primitive Data Types</b>"+"<br>")
+		document.write("var1="+var1+"<br>");
+		document.write("var1 is a "+typeof(var1)+"<br>");
+		document.write("<br>");
+		let var2 = "saisri";
+		document.write("var2="+var2+"<br>");
+		document.write("var2 is a "+ typeof(var2)+"<br>");
+		document.write("<br>");
+		let var3 = BigInt(99999999999898846824);
+		document.write("var3="+var3+"<br>");
+		document.write("var3 is a "+ typeof(var3));
+		document.write("<br>");
+		document.write("<br>");
+		let s = 'saisri';
+		document.write("s="+s+"<br>");
+		document.write(s.endsWith('i')+"  --Boolean"+"<br>")
+		document.write("<br>");
+		let n;
+		document.getElementById('n1').innerText = 
+		document.write(typeof(n));
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<b>Non-Primitive Data Types</b>"+"<br>");
+		let a = [34,546,2,56];
+		console.log(a);
+		document.write(a[0] +"&nbsp;"+"<br>");
+		document.write(typeof(a[0]));
+		const person = {
+			name : "SK.Munnisha",
+			Rollnumber:"04a9",
+			Branch : "ECE"
+		};
+		document.getElementById('demo').innerHTML = person.name +"is"+ person.Rollnumber +
+		"in" +person.Branch;
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style type="">
+		td{
+			text-align: center;
+			font-weight: bold;
+			border: 1px solid grey
+		}
+		td:not(#res){
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+
+	<center>
+	<table style="height: 400px;width: 600px" border=1>
+		<tr>
+			<td colspan="4" id="res" style="height:60px"></td>
+		</tr>
+		<tr>
+		<td onclick="num('9')">9</td>
+		<td onclick="num('8')">8</td>
+		<td onclick="num('7')">7</td>
+		<td onclick="num('/')">/</td>	
+		</tr>
+		<tr>
+		<td onclick="num('6')">6</td>
+		<td onclick="num('5')" >5</td>
+		<td onclick="num('4')" >4</td>
+		<td onclick="num('*')" >*</td>	
+		</tr>
+		<tr>	
+		<td onclick="num('3')">3</td>
+		<td onclick="num('2')">2</td>
+		<td onclick="num('1')">1</td>
+		<td onclick="num('-')">-</td>	
+		</tr>
+		<tr>
+		<td onclick="num('0')">0</td>
+		<td onclick="clearall()">c</td>
+		<td onclick="num('=')">=</td>
+		<td onclick="num('+')">+</td>	
+		</tr>	
+	</table>
+	</center>
+	<script type="text/javascript">
+			function num(val) 
+			{
+				if (val== '=')
+				{
+					var res=document.getElementById('res').innerText;
+					document.getElementById('res').innerText =eval(res)
+
+				}
+				else
+				{
+					document.getElementById('res').innerText +=val;
+				}
+			}
+			function clearall()
+			{
+				document.getElementById('res').innerText='';
+			}
+		
+
+
+	</script>
+</body>
+</html>

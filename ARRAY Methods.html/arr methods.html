@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ARRAY ITERATION METHODS</title>
+</head>
+<body>
+	<h2>Array iteration methods | map()</h2>
+	<p>This method create new array and return it after iteration will completed.</p>
+</body>
+	<script type="text/javascript">
+		let trainees = ['munni','naresh','munnisha','nareshbabu'];
+		//syntax of map()
+		//arr.map(function funName(currentEle,index,arr)
+		{ // // code
+			//});
+		let names=trainees.map(function(name)
+		{
+			document.write(name)
+		})
+		let trainees1 =[{'name' : 'munnisha','rollno' : '1234'},{'name' : 'munni','rollno':'5678'}];
+		trainees1.map(function(individual_trainee,i,arr)
+		{
+			console.log(individual_trainee.name+" "+individual_trainee.rollno)
+		})
+		//or
+		function.test(individual_trainee,i,arr)
+		{
+			console.log(individual_trainee.name+" "+individual_trainee.rollno)
+		}
+
+
+
+</script>
+</html>

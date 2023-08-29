@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String method 1</title>
+</head>
+<body>
+	<table border="1" cellspacing="0">
+		<tr>
+			<td>D</td>
+			<td>r</td>
+			<td>i</td>
+			<td>v</td>
+			<td>e</td>
+			<td>&nbsp</td>
+			<td>R</td>
+			<td>e</td>
+			<td>a</td>
+			<td>d</td>
+			<td>y</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>-11</td>
+			<td>-10</td>
+			<td>-9</td>
+			<td>-8</td>
+			<td>-7</td>
+			<td>-6</td>
+			<td>-5</td>
+			<td>-4</td>
+			<td>-3</td>
+			<td>-2</td>
+			<td>-1</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		function getstr(str) 
+		{
+			document.write("<b>"+str+"</b><br>")
+		}
+		let name='Drive ready';
+		getstr("Original String="+name)
+		getstr("length="+name.length)
+		getstr("charAt="+name.charAt(6))
+		getstr("Indexof="+name.indexOf('e'))
+		getstr("Indexof Word="+name.indexOf('Drive'))
+		getstr("last index of string="+name.lastIndexOf('r'))
+		let n1='DRIVE READY';
+		getstr("To Lower Case="+n1.toLowerCase())
+		getstr("To Upper Case="+name.toUpperCase())
+		let name2='Batch';
+		let name3='FN'
+		let userid="      MunnishaShaik      ";
+		getstr("trim method="+userid.trim())//removing spaces from left anf right
+		//converting string into array => stringname.split()
+		let name4='Raju&Ravi,Ram';
+		document.write(name4.split("&")+"<br>"); // [0]=>Raju[1]=>Ravi,Ram
+		document.write(name4.split(",")+"<br>"); // [0]=>Raju&Ravi[1]=>,Ram
+		let name5="MunnishaShaik";
+		document.write(name5.startsWith('M')+"<br>");
+		document.write(name5.endsWith('h')+"<br>")
+		//slice method
+		//ss('slice of string ='+str.slice(startops,endpos-1));
+		//it allows postive  and negative index values
+		getstr('slice of string ='+name.slice(1,5));
+		getstr('slice of string='+name.slice(-3));
+		getstr('slice of string='+name.slice(-4,-3));
+
+		//substring method
+		// it is allowing the positive indexes
+		getstr('substring of string ='+name.substring(1,5));
+		getstr('substring of string='+name.substring(5,1));
+		getstr('substring of string='+name.substring(-1));//complete string will come
+
+		//substr method
+		//substr(startpos,lenght of the charcters from the first position)
+		getstr("substr method ="+name.substr(0,4))//drive
+
+		//include method
+		//it allows the +ve indexs
+		getstr('includes of string='+name.includes('ready'));
+		//charCodeAt method -- for finding the ascii code values
+		getstr("charCodeAt is ="+name.charCodeAt(3));
+
+		//repeat method
+		getstr('repeat of string ='+name.repeat(4));
+
+		//replace method
+		getstr('replace of string ='+name.replace('ready','course'))
+
+
+
+
+
+	</script>
+</body>
+</html>

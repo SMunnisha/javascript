@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Methods</title>
+</head>
+<body>
+	<h4>Array Methods</h4>
+	<script type="text/javascript">
+		let array = [10,20,30]; //------>array Foreach method
+		console.log(array);
+		array.forEach(function (amount,index,arr)
+		{
+			var inc=amount/10;
+			arr[index] =amount+inc;
+
+		});
+		document.write("Given Array = [10,20,30]","<br>")
+		document.write("Foreach of a given Array =")
+		document.write(array);
+		document.write("<hr>")
+		let array1 = [20,10,60]; //------>array sort method
+		arr=array1.sort()
+		document.write("Given Array = [20,10,60]","<br>")
+		document.write("Sort of a given Array =")
+		document.write(arr);
+		document.write("<hr>")
+		let num =[2,50,6,3,9,4] //array filter method
+		let even_num =num.filter(function(filter) 
+		{
+			return filter%2==0
+		})
+		document.write("Given Array = [2,50,6,3,9,4]","<br>")
+		document.write("Even numbers of a given Array =")
+		document.write(even_num,"<br>")
+		let odd_num=num.filter(function(filter,i,arr)
+		{
+			return filter%2!=0
+		})
+		document.write("Given Array = [2,50,6,3,9,4]","<br>")
+		document.write("Odd numbers of a given Array =")
+		document.write(odd_num)
+		document.write("<hr>")
+		let arr1=[1,2,3] //concat method
+		array=arr1.concat([4,5,6]);
+		document.write("Given Array1 = [1,2,3]","<br>")
+		document.write("Array to be added = [4,5,6]","<br>")
+		document.write("Concat of a given Array =")
+		document.write(array)
+		document.write("<hr>")
+
+		let marks=[55,83,45,112,67]; //every method
+ 		let result =marks.every(function(res) 
+ 		{
+ 			return res>35;
+ 		})
+ 		document.write("Given Array1 = [55,83,45,112,67]","<br>")
+		document.write("Every of a given Array =")
+		document.write(result)
+		document.write("<hr>")
+		let arr2=[3,83,35,112,67]; //every method
+ 		let res =arr2.some(function(nor) 
+ 		{
+ 			return nor>35;
+ 		})
+ 		document.write("Given Array1 = [3,83,35,112,67]","<br>")
+		document.write("Some of a given Array =")
+		document.write(res)
+		document.write("<hr>")
+		let arr3=[1,2,3,4,5];  //includes method
+ 		 array3=arr3.includes(2);
+ 		document.write("Given Array1 =[1,2,3,4,5]"+"<br>");
+		document.write("Includes of a given Array =")
+		document.write(array3)
+		document.write("<hr>")
+		let arr4=["munni","chandu","saisri"];  //join method
+ 		array4=arr4.join(' and ');
+ 		document.write("Given Array1 =[munni,chandu,saisri]"+"<br>");
+		document.write("join of a given Array =")
+		document.write(array4)
+		document.write("<hr>")
+		let name=['munni','sameer','alisha']; //find method
+		let getname=name.find(function(name)
+		{
+			return name.startsWith('s');	
+		})
+		document.write("Given Array1 =[munni,alisha,sameer]"+"<br>");
+		document.write("Finding  of a given Array =")
+		document.write(getname)
+		document.write("<hr>")
+		let n1=[3,5,6]; //findindexof method
+		let index=n1.findIndex(function(name)
+		{
+			return name>5;	
+		})
+		document.write("Given Array1 =[3,5,6]"+"<br>");
+		document.write("Index  of a given Array =")
+		document.write(index)
+		document.write("<hr>")
+
+		let arr5 = [1.5, 2.3, 1.1, 4.3]; //reduce method
+		n1= arr5.reduce(getSum, 0);function getSum(total, num)
+		 {
+  			return total + Math.round(num);
+		}
+		document.write("Given Array1 =[1.5, 2.3, 1.1, 4.3]"+"<br>");
+		document.write("Reduce  of a given Array =")
+		document.write(n1)
+		document.write("<hr>")
+		let fruits = ["Banana", "Orange", "Apple", "Mango"]; //reverse method
+		f1= fruits.reverse();
+		document.write("Given Array1 =[Banana,Orange,Apple,Mango]"+"<br>");
+		document.write("Revese of a given Array =")
+		document.write(f1)
+		document.write("<hr>")
+		let Course1 = ["FSD","AWS","PEGA"]; //indexof method
+		course=Course1	.indexOf("AWS");
+		document.write("Given Array1 =[FSD,AWS,PEGA]"+"<br>");
+		document.write("Index  of a given Array =")
+		document.write(course)
+		document.write("<hr>")
+		let sirs= ["JDP","NDP","SIMHADRI"]; //fill method
+		sir=sirs	.fill("BABJI");
+		document.write("Given Array1 =[JDP,NDP,SIMHADRI]"+"<br>");
+		document.write(" Filling of a given Array =")
+		document.write(sir)
+		document.write("<hr>")
+		let arr6 = ["naresh","munnisha","saisri","chandu"]; //Slice method
+		array6=arr6	.slice(-3,-1);
+		document.write("Given Array1 =[naresh,munnisha,saisri,chandu]"+"<br>");
+		document.write("Slice  of a given Array =")
+		document.write(array6)
+		document.write("<hr>")
+		var arr8=["AngularJS","Node.js"]; //unshift method
+		var result1=arr8.unshift("JQuery");
+		document.write("Given Array1 =[AngularJS,Node.js]"+"<br>");
+		document.write(" UnShift of a given Array =")
+		document.writeln(arr8);
+		document.write("<hr>");
+		const fruit = ["Banana", "Orange", "Apple", "Mango"];
+
+
+		
+
+
+
+
+
+		
+
+
+		
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

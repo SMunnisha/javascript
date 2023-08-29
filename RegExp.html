@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Expression</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//let str='munni';
+		// let re =/batch/;
+		// let output=re.test("fullstack batch");
+		// console.log(output);
+
+		// //case sensitive
+		// let re1 =/batch/i;
+		// let output1=re1.test("fullstack BATCH");
+		// console.log(output1);
+
+		re =/^b/;
+		output= re.test("tbatch"); //false
+		console.log(output)
+
+		re1 =/^b/;
+		output1 =re.test("batch"); //true
+		console.log(output1)
+		
+		let x="batch";
+		re2 =new RegExp(`{a}`);
+		output2 =re2.test("fullstack batch");
+		console.log(output2)
+
+		re3=/is/g;
+		output3=re3.exec("Munni is ECE Student.She is FSD Trainee")
+		console.log(output3)
+		console.log(output3.index);
+		output3=re3.exec("Munni is ECE Student.She is FSD Trainee");
+		console.log(output3.index);
+
+		//number
+		re4=/^[0-9]{10}$/
+		output4=re4.test("9182479262");
+		console.log(output4)
+		if (output4==true)
+		{
+			alert("correct")
+		}
+		else
+		{
+			alert("wrong")
+		}
+		re5=/^[0-9]{10}/
+		output5=re5.test("91824792628455412");
+		console.log(output5)
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task1</title>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<th>course name</th>
+			<th>course number</th>
+			<th>course fees</th>
+			<th>place</th>
+		</tr>
+
+		<tbody id="munni"></tbody>
+	</table>
+	<script type="text/javascript">
+		let content=[{
+			name:"html",
+			number:"2823",
+			fees:"235",
+			place:"dwp"
+
+		},
+		{
+			name:"html",
+			number:"2823",
+			fees:"7656",
+			place:"dwp"
+
+		},
+		{
+			name:"javascript",
+			number:"65687",
+			fees:"567",
+			place:"dwp"
+
+		}
+		]
+		for ( i = 0; i < content.length; i++) 
+		{
+		let tr= document.createElement("tr");
+		let t1= document.createElement("td");
+		let t2= document.createElement("td");
+		let t3= document.createElement("td");
+		let t4= document.createElement("td");
+		t1.innerText=content[i].name;
+		t2.innerText=content[i].number;
+		t3.innerText=content[i].fees;
+		t4.innerText=content[i].place;
+		tr.append(t1)
+		tr.append(t2)
+		tr.append(t3)
+		tr.append(t4)
+		document.getElementById('munni').append(tr)
+
+	}
+
+	</script>
+
+</body>
+</html>

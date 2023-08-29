@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ARRAY ITERATION METHODS</title>
+</head>
+<body>
+	<h2>Array iteration methods | each()</h2>
+	<p>This method create new array and return it after iteration will completed.</p>
+</body>
+	<script type="text/javascript">
+		let salaries = [400,200,500]; //------>array each method
+		console.log(salaries);
+		salaries.forEach(function (amount,index,arr)
+		{
+			var inc=amount/10;
+			console.log(inc)
+			arr[index] =amount+inc;
+
+		});
+		console.log(salaries);
+
+
+</script>
+</html>
